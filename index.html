@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="asset/css/style1.css">
+        <script defer src="asset/js/app.js"></script>
+        <script src="https://kit.fontawesome.com/716de6528e.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        
+        <header>
+            <b class="logo">dew</b>
+            <ul>
+                <li><a href="#one">Home</a></li>
+                <li><a href="#two">About me</a></li>
+                <li><a href="#three">Education</a></li>
+                <li><a href="#four">Skills</a></li>
+                <li><a href="#five">Contact</a></li>
+                
+            </ul>
+           
+        </header>
+        
+        <button onclick="run()">
+            <img class="buttonimg" src="asset/css/Pic/pause.png" alt="Transparent Image" id="icon">
+        </button>
+        <div class="container">
+            
+            <audio  type="audio/mpeg" id="myAudio" class="audio" autoplay src="asset/Song/wwy.mp3"> </audio>
+            <script src ="asset/js/app1.js"></script>
+            <section class="one" id="one">
+            
+                <p class="hvr-outline-out" data-shadow="PORTFOLIO" style="color:rgb(255, 255, 255)">PORTFOLIO </p>
+            </section>
+            <section class="two" id="two">
+                <div class="container1" id="contwo">
+                    <p class="h1 hidden" data-shadow="About Me "><span class="x">About Me<br></span></p>
+                    <p class="h2 hover-effect hidden" >I'm Kittitat . . . .<br> </p>
+                    <span class="l1 hidden">Studying, playing likes a ordinary people.<br></span>
+                    <span class="l2 hidden">Just a good guy that you can see anywhere.<br></span>
+                    <span class="l3 hidden">Just normal college student, always reading books. <br></span>
+                    <span class="l4 hidden">Plese accept me to this university; then I won't have a place to study.</span>
+                    <figure id="figure" class="hidden ">
+                        <img class="img " src="asset/css/Pic/me1.jpg" alt="image" id="me">
+                        <figure id="pop" class="pop fig2" ></figure>
+                        
+                    </figure>
+                        <figcaption id="pop" class="pop a1" style="text-align: center;line-height: 0.75;"> DEW<br><span id="a2" >Kittitat Manokun</span><span id="a3"></span></figcaption>
+                    <script >
+                        const fig = document.getElementById('figure');
+                        const pops = document.querySelectorAll('.pop');
+
+                        fig.addEventListener('mouseover', () => {
+                        pops.forEach(pop => {
+                             pop.classList.add('linear');
+                        });
+                        });
+
+                        fig.addEventListener('mouseout', () => {
+                        pops.forEach(pop => {
+                            pop.classList.remove('linear');
+                        });
+                        });
+                        </script>
+                        
+                    </div>
+            </section>
+            <section class="three" id="three">
+                <div class="container3">
+                    <p span class="h4 hidden" data-shadow="Education ">Education<br></p>
+                    <div class="bigframe hidden" ><div class="frame"id="e1"><a href="http://www.amarin.ac.th/index_page.html" target="_blank"><img class="school e1 " src="asset/css/Pic/s1.png" ></a></div>
+                    <div class="frame hidden" id="e2"><a href="http://www.nairong.ac.th/" target="_blank"><img class="school nairong e2" src="asset/css/Pic/s2.png"></a></div>
+                    <div class="frame hidden" id="e3"><a href="http://www.nairong.ac.th/" target="_blank"><img class="school nairong e3" src="asset/css/Pic/s2.png"></a></div>
+                    <span class="line " id="line1"></span><span class="line " id="line2"></span>
+                </div>
+                
+                <div class="below hidden" id="be1">
+                    <div class="arm" id="b1"></div><div class="leg" id="c1"></div><span class="text" id="t1" style="text-align: left;line-height: 2;"> Elementary School: <br> Ammarintraram School</span>
+                </div>
+                <div class="below hidden" id="be2">
+                    <div class="arm" id="b2"></div><div class="leg" id="c2"></div><span class="text" id="t2" style="text-align: center;line-height: 2;"> Middle School: <br> Watnairong School</span>
+                </div>
+                <div class="below hidden" id="be3">
+                    <div class="arm" id="b3"></div><div class="leg" id="c3"></div><span class="text" id="t3"style="text-align: right;line-height: 2;"> High School: <br> Watnairong School</span>
+                
+                </div>
+            </div>
+            
+            </section>
+            <section class="four" id="four">
+                <div class="container2">
+                <p class="h5 hidden" id="h5" data-shadow="Skills ">Skills</p>
+                <div class=" skill">
+                    <div class="sk1 hidden" style="text-align: center;line-height: 2;"><i class="sklo fa-solid fa-language"></i><span class="skill1"><br>English<br></span><span id="des">Reading, speaking, writng,<br> listening. I normally reading <br>english in textbook. </span>
+                    </div>
+                    <div class="sk1 hidden" style="text-align: center;line-height: 2;"><i class="sklo fa-solid fa-table-tennis-paddle-ball"></i><span class="skill1"><br>Pingpong<br></span><span id="des">I play pingpong oftenly at <br> my old school. It is one of <br> my favorite sport.  </span>
+                    </div>
+                    <div class="sk1 hidden" style="text-align: center;line-height: 2;"><i class="sklo fa-solid fa-book"></i><span class="skill1"><br>Book<br></span><span id="des"> In my freetime,  I like to read <br> books especialy light novel. <br> I know abunch of them. </span>
+                    </div>
+                    <div class="sk1 hidden" style="text-align: center;line-height: 2;"><i class="sklo fa-solid fa-computer"></i><span class="skill1"><br>Coding<br></span><span id="des">I can coding c++, c. I have <br> knowledge a little bit about <br> javascript, css. </span>
+                    </div>
+                    
+                </div>
+                </div>
+                <script defer>
+                    const e1 = document.getElementById('e1');
+                    const e2 = document.getElementById('e2');
+                    const e3 = document.getElementById('e3');
+                    const l1 = document.getElementById('line1');
+                    const l2 = document.getElementById('line2');
+                    const below = document.querySelectorAll('.below');
+                    const sec4 = document.getElementById('four');
+                    const sec3 = document.getElementById('three');
+
+                    e1.addEventListener('mouseover', () => {
+                        l1.classList.add('full');
+                        f1.classList.add('show');
+                        f2.classList.remove('show');
+                        f3.classList.remove('show');
+                    });
+
+                    e1.addEventListener('mouseout', () => {
+                        l1.classList.remove('full');
+                    });
+
+                    e2.addEventListener('mouseover', () => {
+                        l1.classList.add('half');
+                        l2.classList.add('half');
+ 
+                    });
+
+                    e2.addEventListener('mouseout', () => {
+                    l1.classList.remove('half');
+                    l2.classList.remove('half');
+                    });
+
+                    e3.addEventListener('mouseover', () => {
+                        l2.classList.add('full');
+            
+                    });
+
+                    e3.addEventListener('mouseout', () => {
+                        l2.classList.remove('full');
+                    });
+                   
+                    
+                    </script>
+            </section>
+            <section class="five" id="five">
+                <div class="container2">
+                <p span class="h6 hidden" data-shadow="Contact Me">Contact Me</p>
+                <div class=" social-links">
+                    <a href="https://www.youtube.com/channel/UCNFaIb6ettGAyU6hi9MWYWg" target="_blank"><i class="hidden fab fa-brands fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/dewnoi555" target="_blank"><i class="hidden fab fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/dew_noi/" target="_blank"><i class="hidden fab fa-brands fa-instagram"></i></a>
+                    <a href="https://discord.com/users/373039942126796802" target="_blank"><i class="hidden fab fa-brands fa-discord"></i></a>
+                    <a href="https://www.twitch.tv/dewnoi" target="_blank"><i class="hidden fab fa-brands fa-twitch"></i></a>
+                    <a href="https://github.com/dewnoi" target="_blank"><i class="hidden fab fa-brands fa-github"></i></a>
+                </div>
+                </div>
+            </section>
+            <script src ="asset/js/app1.js"></script>
+        </div>
+        <script type="text/javascript">
+            var container = document.querySelector(".container");
+            var header = document.querySelector("header");
+        
+            container.addEventListener("scroll", function() {
+                if (container.scrollTop === 0) {
+                    header.classList.remove("sticky");
+                } else {
+                    header.classList.add("sticky");
+                }
+            });
+        </script>
+    </body>    
+</html>
